@@ -1,7 +1,13 @@
 # Macro-Calculator
 
+To start the application, change directory to the newly created folder:
+        cd C:\Users\isabe\Documents\Macro-Calculator\Macro-Calculator-App
+and run the application as follows:
+        taipy run main.py
+
 To Do:
-- initialize taipy GUI
+- remove navbar
+
 - make python module
 - make basic user interface
 - bring in recipe API
