@@ -1,7 +1,7 @@
 # Macro-Calculator
 
 To start the application, change directory to the newly created folder:
-        cd C:\Users\isabe\Documents\Macro-Calculator\Macro-Calculator-App
+        cd C:\Users\isabe\Documents\Macro-Calculator
 and run the application as follows:
         taipy run main.py
 

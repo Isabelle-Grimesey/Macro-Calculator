@@ -1,0 +1,24 @@
+[CORE]
+core_version="3.0"
+
+[DATA_NODE.input_nutrition_specs]
+storage_type = "pickle"
+scope = "SCENARIO:SCOPE"
+
+[DATA_NODE.input_meal]
+storage_type = "pickle"
+scope = "SCENARIO:SCOPE"
+
+[DATA_NODE.output]
+storage_type = "pickle"
+scope = "SCENARIO:SCOPE"
+
+[TASK.calculate_portions_for_3]
+inputs = [ "input_meal:SECTION", "input_nutrition_specs:SECTION" ]
+outputs = [ "output:SECTION" ]
+function = "backend.calculate_portions_for_3:function"
+skippable = "False:bool"
+
+[SCENARIO.mvp_scenario]
+additional_data_nodes = [ ]
+tasks = [ "calculate_portions_for_3:SECTION" ]
